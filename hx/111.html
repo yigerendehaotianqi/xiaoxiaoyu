@@ -1,0 +1,20 @@
+ <html>
+	<head></head>
+<body>
+	<ul>
+		<li><a href="a1.jpg" onclick="showPic(this); return false;">meinv1</a></li>
+<li><a href="a2.jpg" onclick="showPic(this); return false;">meinv1</a></li>
+<li><a href="a3.jpg" onclick="showPic(this); return false;">meinv1</a></li>
+
+	</ul>
+	<img id="placeholder" src="4.png"/>
+	<script>
+	function showPic(whichpic){
+	var source = whichpic.getAttribute("href");
+
+	var placeholder = document.getElementById("placeholder");
+	placeholder.setAttribute("src",source);
+	}
+	</script>
+</body>
+</html>
